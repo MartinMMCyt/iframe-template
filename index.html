@@ -1,0 +1,47 @@
+<!-- Made by Martin_MMC -->
+<!DOCTYPE html>
+<html>
+
+<head>
+    <base href="http://cdn.jsdelivr.net/gh/martinmmcyt/iframe-template@main/">
+    <meta charset="UTF-8">
+    <title>Game Launcher</title>
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+    <canvas id="bg-canvas"></canvas>
+
+    <div class="top-bar">
+        <h2 id="title">Game Title</h2>
+        <div class="button-container">
+            <button class="red-btn" id="launch">Launch Game</button>
+        </div>
+    </div>
+
+    <!-- TEMPLATE SETTINGS (EDIT ONLY THIS SECTION) -->
+    <script>
+        const CONFIG = {
+            gameName: "Fortnite",
+            gameURL: "https://larp.now/embed.html#https://nowgg.fun/apps/aptoide/5874/aptoide.html?deep_link=aptoidesearch://com.epicgames.fortnite",
+
+            // Particle settings
+            maxParticles: 50,
+            maxDistance: 100,
+            particleColors: ['#0ff', '#ff0', '#f0f', '#0f0', '#f0ff']
+        };
+
+        // Apply title automatically
+        document.getElementById("title").textContent = CONFIG.gameName;
+        document.title = CONFIG.gameName + " Launcher";
+    </script>
+
+    <!-- Scripts -->
+    <script src="launcher.js"></script>
+    <script src="particles.js"></script>
+
+</body>
+</html>
