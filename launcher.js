@@ -14,8 +14,8 @@ iframe{width:100%;height:100%;border:none;}
 </head>
 <body>
 <iframe src="${CONFIG.gameURL}"
-allow="fullscreen; gamepad; pointer-lock"
-sandbox="allow-scripts allow-same-origin allow-pointer-lock allow-forms">
+allow="fullscreen; gamepad; pointer-lock; popups"
+sandbox="allow-scripts allow-same-origin allow-pointer-lock allow-forms allow-popups">
 </iframe>
 </body>
 </html>
